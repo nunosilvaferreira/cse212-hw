@@ -23,8 +23,7 @@ public static class Arrays
         Step 3: For each iteration, calculate the multiple by multiplying the number by the current iteration index
         Step 4: Store each calculated multiple in the corresponding position in the array
         Step 5: Return the completed array containing all multiples
-        
-        Example: MultiplesOf(3, 5) should produce [3, 6, 9, 12, 15]
+    
         */
         
         // Step 1: Create a new array with the specified length
@@ -34,7 +33,6 @@ public static class Arrays
         for (int i = 0; i < count; i++)
         {
             // Calculate the multiple: number multiplied by (i + 1)
-            // We use (i + 1) because we want multiples starting from 1×, 2×, 3×, etc.
             multiples[i] = number * (i + 1);
             
             // Debug output to verify calculations
