@@ -1,13 +1,20 @@
-﻿public static class MysteryStack1 {
-    public static string Run(string text) {
+﻿using System;
+using System.Collections.Generic;
+
+public static class MysteryStack1
+{
+    // Reverse a string using a stack
+    public static string Run(string text)
+    {
         var stack = new Stack<char>();
+
         foreach (var letter in text)
             stack.Push(letter);
 
-        var result = "";
+        var result = new System.Text.StringBuilder();
         while (stack.Count > 0)
-            result += stack.Pop();
+            result.Append(stack.Pop());
 
-        return result;
+        return result.ToString();
     }
 }
